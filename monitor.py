@@ -16,7 +16,7 @@ from transformers import pipeline
 # - LEADERS: JSON array string, e.g. '["John Doe","Jane Smith"]'
 # - TARGET_URLS: JSON array string, e.g. '["https://www.facebook.com/...","https://www.linkedin.com/..."]'
 # - EMAIL_FROM, EMAIL_PASS, EMAIL_TO
-
+SENTIMENT_MODEL = os.getenv("SENTIMENT_MODEL", "distilbert-base-uncased-finetuned-sst-2-english")
 LEADERS = json.loads(os.getenv("LEADERS", "[]"))
 TARGET_URLS = json.loads(os.getenv("TARGET_URLS", "[]"))
 EMAIL_FROM = os.getenv("EMAIL_FROM")
