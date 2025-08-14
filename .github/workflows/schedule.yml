@@ -29,14 +29,3 @@ jobs:
           SENTIMENT_MODEL: ${{ secrets.SENTIMENT_MODEL }}
         run: |
           python monitor.py
-
-# Output: print instructions for user to split these into repo files
-print("==== FILES (copy into your new GitHub repo) ====")
-print("--- monitor.py ---")
-print(open(__file__).read())
-print("--- README.md ---")
-print(README)
-print("--- requirements.txt ---")
-print("requests\nbeautifulsoup4\ntransformers\ntorch\n")
-print("--- .github/workflows/schedule.yml ---")
-print(WORKFLOW)
