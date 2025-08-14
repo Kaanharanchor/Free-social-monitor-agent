@@ -21,11 +21,11 @@ jobs:
           pip install -r requirements.txt
       - name: Run monitor
         env:
+          SENTIMENT_MODEL: distilbert-base-uncased-finetuned-sst-2-english
           LEADERS: ${{ secrets.LEADERS }}
           TARGET_URLS: ${{ secrets.TARGET_URLS }}
           EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
           EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
-          SENTIMENT_MODEL: ${{ secrets.SENTIMENT_MODEL }}
         run: |
           python monitor.py
