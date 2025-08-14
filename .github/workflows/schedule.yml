@@ -1,4 +1,3 @@
-WORKFLOW = r"""
 name: Scheduled Social Monitor
 
 on:
