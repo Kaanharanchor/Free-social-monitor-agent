@@ -29,7 +29,6 @@ jobs:
           SENTIMENT_MODEL: ${{ secrets.SENTIMENT_MODEL }}
         run: |
           python monitor.py
-"""
 
 # Output: print instructions for user to split these into repo files
 print("==== FILES (copy into your new GitHub repo) ====")
