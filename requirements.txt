@@ -1,5 +1,4 @@
-
-# requests
-# beautifulsoup4
-# transformers
-# torch           # optional but recommended; action will install cpu version
+requests
+beautifulsoup4
+transformers
+torch
